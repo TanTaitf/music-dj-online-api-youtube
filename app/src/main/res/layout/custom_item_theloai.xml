@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="146dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:padding="4dp"
+            android:id="@+id/imgTruyenTheLoai"
+            android:layout_width="90dp"
+            android:layout_height="130dp" />
+        <LinearLayout
+            android:weightSum="3.5"
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:paddingLeft="10dp"
+                android:id="@+id/txtTenTruyenTheLoai"
+                android:textColor="#01579B"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Tên truyện"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#9E9E9E"
+                android:paddingLeft="10dp"
+                android:id="@+id/txtTheLoaiTheLoai"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Thể loại: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtChapterTheLoai"
+                android:paddingLeft="10dp"
+                android:textSize="10sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Chapter"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:paddingLeft="10dp"
+                android:id="@+id/txtLuotXemTheLoai"
+                android:text="Lượt xem"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/imgFavouriteTheLoai"
+                android:layout_centerInParent="true"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

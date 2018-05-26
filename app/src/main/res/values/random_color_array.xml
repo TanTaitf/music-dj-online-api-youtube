@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="apptour">
+        <item>@color/blueGray</item>
+        <item>@color/cam</item>
+        <item>@color/Purple</item>
+        <item>@color/DeepPurple</item>
+        <item>@color/Indigo</item>
+        <item>@color/LightBlue</item>
+        <item>@color/LightBlue900</item>
+        <item>@color/Lime</item>
+        <item>@color/hongcanhsen</item>
+        <item>@color/teal</item>
+        <item>@color/teal900</item>
+        <item>@color/colorTex</item>
+
+
+    </array>
+
+</resources>

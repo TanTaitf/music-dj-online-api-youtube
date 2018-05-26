@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<com.wang.avi.AVLoadingIndicatorView-->
+        <!--android:id="@+id/avi"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--app:indicatorColor="#1dfd11"-->
+        <!--app:indicatorName="BallClipRotatePulseIndicator" />-->
+    <android.support.v4.widget.NestedScrollView
+        android:fillViewport="true"
+        android:id="@+id/layout_nested"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FCE4EC"
+            >
+            <!--android:descendantFocusability="blocksDescendants"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways|snap"-->
+
+            <android.support.v7.widget.RecyclerView
+                android:background="#ffffff"
+                android:id="@+id/myRecyclerViewTheLoai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutAnimation="@anim/layout_animation_fall_down">
+
+            </android.support.v7.widget.RecyclerView>
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:background="#ffffff"-->
+                <!--android:id="@+id/myRecyclerViewSearch"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:visibility="gone"-->
+                <!--android:layoutAnimation="@anim/layout_animation_fall_down">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/linear_avi"-->
+        <!--android:gravity="center">-->
+        <!--<com.wang.avi.AVLoadingIndicatorView-->
+            <!--android:id="@+id/avi"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--app:indicatorColor="#1dfd11"-->
+            <!--app:indicatorName="BallClipRotatePulseIndicator" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/ln_gif_loadhome"
+        android:layout_height="match_parent">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gif_loadinghome"
+            android:background="#ffffff"
+            />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

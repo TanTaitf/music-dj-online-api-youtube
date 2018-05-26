@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/autoplay_frame" >
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/texxtURL"
+            android:textSize="12sp"/>
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:id="@+id/click"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--<WebView-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/cam"-->
+        <!--android:id="@+id/webview"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--</WebView>-->
+
+    <!--</LinearLayout>-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.allattentionhere.autoplayvideos.AAH_CustomRecyclerView
+            android:id="@+id/rv_loadautoplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</FrameLayout>

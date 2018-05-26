@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.media.tf.app_dj_online"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true //important
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    dexOptions {
+//        incremental true
+//        javaMaxHeapSize "12g"
+//    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //compile 'com.thefinestartist:ytpa:1.2.1'
+
+    //    compile 'com.rapidapi:rapidconnect-android:0.1'
+    //    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    //    compile 'com.roger.catloadinglibrary:catloadinglibrary:1.0.1'
+    //    compile 'com.github.chrisbanes:PhotoView:2.1.3'
+    //    compile 'com.github.hoanganhtuan95ptit:AutoPlayVideoRecyclerView:1.0.1'
+    //    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    //    compile 'com.github.PierfrancescoSoffritti:AndroidYouTubePlayer:4.1.4'
+    //    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    //    compile 'de.hdodenhof:circleimageview:2.2.0'
+//    compile 'com.github.adityagohad:HorizontalPicker:1.0.1'
+//    compile 'com.github.michael-rapp:android-material-dialog:4.1.0'
+    //    compile 'com.sdsmdg.harjot:rotatingtext:1.0.2'
+//    compile 'com.github.elevenetc:textsurface:0.9.1'
+    //    compile 'com.google.firebase:firebase-firestore:10.0.1'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.wang.avi:library:2.1.3'
+    compile 'jp.wasabeef:blurry:2.1.1'
+    compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    compile 'com.romainpiel.shimmer:library:1.4.0@aar'
+    compile 'com.azoft.carousellayoutmanager:carousel:1.2.1'
+    compile 'com.allattentionhere:autoplayvideos:0.2.0'
+    compile 'com.jakewharton:butterknife:8.6.0'
+    compile 'com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT'
+    compile 'com.android.support:support-compat:25.1.1'
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.3@aar'
+    compile 'com.github.robertsimoes:Shareable:0.1.0'
+    compile 'com.android.support:recyclerview-v7:26.+'
+    compile 'com.android.support:cardview-v7:26.+'
+    compile 'com.android.support:design:26.+'
+    compile 'com.squareup.picasso:picasso:2.71828'
+    compile 'org.jsoup:jsoup:1.10.3'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.github.rubensousa:gravitysnaphelper:1.3'
+    compile 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    compile 'com.google.android.gms:play-services-auth:10.0.1'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.google.firebase:firebase-database:10.0.1'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.7'
+    compile 'com.google.firebase:firebase-storage:10.0.1'
+    compile 'org.jetbrains:annotations-java5:15.0'
+    compile 'com.google.code.findbugs:jsr305:2.0.1'
+    compile 'com.github.castorflex.smoothprogressbar:library:1.1.0'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.9'
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.firebase:firebase-ads:10.0.1'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--"-->
+    <android.support.design.widget.AppBarLayout
+
+        android:id="@+id/myAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:layout_gravity="center_horizontal"
+
+                android:id="@+id/myToolBar"
+                app:tabMode="scrollable"
+                app:tabGravity="fill"
+                app:tabBackground="@color/LightBlue"
+                android:background="@color/LightBlue"
+                app:tabIndicatorColor="#00450d"
+                app:tabIndicatorHeight="2dp"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+                <TextView
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#fdfdfd"
+                    android:textSize="18sp"
+                    android:id="@+id/myTextToolBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.Toolbar>
+
+            <!--<com.miguelcatalan.materialsearchview.MaterialSearchView-->
+                <!--android:id="@+id/mySearchView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+        </RelativeLayout>
+        <android.support.design.widget.TabLayout
+            app:tabIndicatorColor="#ffffff"
+            android:id="@+id/myTabLayout"
+            app:tabBackground="?attr/selectableItemBackground"
+            android:background="@color/LightBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myViewPager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+    </android.support.v4.view.ViewPager>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_wellcome"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone"-->
+        <!--android:background="@drawable/custom_logostartapp"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<com.skyfishjy.library.RippleBackground-->
+            <!--android:id="@+id/content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:rb_color="#0099CC"-->
+            <!--app:rb_duration="3000"-->
+            <!--app:rb_radius="32dp"-->
+            <!--app:rb_rippleAmount="4"-->
+            <!--app:rb_scale="6">-->
+
+            <!--<ImageView-->
+                <!--android:layout_gravity="center"-->
+                <!--android:id="@+id/centerImage"-->
+                <!--android:layout_width="64dp"-->
+                <!--android:layout_height="64dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:src="@drawable/ic_wellcom_2" />-->
+        <!--</com.skyfishjy.library.RippleBackground>-->
+
+    <!--</LinearLayout>-->
+
+</android.support.design.widget.CoordinatorLayout>

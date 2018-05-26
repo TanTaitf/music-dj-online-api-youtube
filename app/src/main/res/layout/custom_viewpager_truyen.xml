@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.media.tf.app_dj_online.CustomClass.PageCurlFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/myImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="@drawable/custom_backgroud_transparent"
+        android:text="1/30"
+        android:id="@+id/txtChapHienTai"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</com.media.tf.app_dj_online.CustomClass.PageCurlFrameLayout>

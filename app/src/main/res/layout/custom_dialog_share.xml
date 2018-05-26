@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/dialog_main"
+    android:layout_width="250dp"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <Button
+        android:onClick="facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:id="@+id/button_facebook"
+        android:drawableLeft="@drawable/icons_facebook_32"
+       />
+
+    <Button
+        android:onClick="plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google Plus"
+        android:id="@+id/button_gplus"
+        android:drawableLeft="@drawable/ic_gplus" />
+
+    <Button
+        android:onClick="linkedin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linkedin"
+        android:drawableLeft="@drawable/ic_linked"
+        android:id="@+id/button_linkedin"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:onClick="email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:drawableLeft="@drawable/icons_gmail_32"
+        android:id="@+id/button_email"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:onClick="messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:drawableLeft="@drawable/ic_mss"
+        android:id="@+id/button_messages" />
+
+
+    <Button
+        android:onClick="tumblr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tumblr"
+        android:drawableLeft="@drawable/ic_tumblr"
+        android:id="@+id/button_tumblr"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:onClick="twitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Twitter"
+        android:drawableLeft="@drawable/icons_twitter_32"
+        android:id="@+id/button_twitter" />
+    <Button
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/arrow"
+        android:id="@+id/button_hide_dialog"
+        android:text="Hide"/>
+
+
+
+</LinearLayout>

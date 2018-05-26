@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DJ EDM</string>
+    <string name="facebook_app_id">961900700614564</string>
+    <string name="fb_login_protocol_scheme">fb961900700614564</string>
+    <!--<string name="default_web_client_id">322323</string>-->
+    <string name="key_marketplace">pSsUeOKdEdmshCKqOFvcHmB1FA4Jp1nXF4CjsnNzIKL8Tfy8Xh</string>
+    <string name="error_no_yt_link">Not a valid YouTube link!</string>
+    <string name="api_key">AIzaSyBmTVXZn7dsnLL__gLeK2EPL_5_z-igqCw</string>
+
+    <string-array name="interpolators">
+        <item>Accelerate</item>
+        <item>Linear</item>
+        <item>AccelerateDecelerate</item>
+        <item>Decelerate</item>
+        <item>FastOutSlowIn</item>
+    </string-array>
+</resources>

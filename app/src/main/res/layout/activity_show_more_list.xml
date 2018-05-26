@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/myAppBarHanhDong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_gravity="center_horizontal"
+            app:tabSelectedTextColor="#05810b"
+            android:id="@+id/myToolBarHanhDong"
+            app:tabMode="scrollable"
+            app:tabGravity="fill"
+            android:background="#68e2ce"
+            app:tabIndicatorColor="#00450d"
+            app:tabIndicatorHeight="2dp"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--android:layout_centerHorizontal="true"-->
+                <TextView
+                    android:id="@+id/txtTitleTheLoai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:maxLength="40"
+                    android:text="TOP VIDEO"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <!--<com.miguelcatalan.materialsearchview.MaterialSearchView-->
+                    <!--android:id="@+id/mySearchViewShowTheLoai"-->
+                    <!--android:background="#68e2ce"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                <!--</com.miguelcatalan.materialsearchview.MaterialSearchView>-->
+                <!--<com.miguelcatalan.materialsearchview.MaterialSearchView-->
+                    <!--android:id="@+id/mySearchViewShowTheLoai"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"/>-->
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
+
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/myNestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_scrollFlags="scroll|enterAlways|snap">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCE4EC"
+        >
+        <!--android:descendantFocusability="blocksDescendants"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways|snap"-->
+
+            <android.support.v7.widget.RecyclerView
+
+                android:background="#ffffff"
+                android:id="@+id/listFeed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutAnimation="@anim/layout_animation_fall_down"
+                android:fillViewport="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        <android.support.v7.widget.RecyclerView
+
+            android:background="#ffffff"
+            android:id="@+id/listFeed_Search"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            android:fillViewport="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+            <!--<com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar-->
+                <!--android:id="@+id/progress_circle"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginBottom="60dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:mlpb_arrow_height="5dp"-->
+                <!--app:mlpb_arrow_width="10dp"-->
+                <!--app:mlpb_show_arrow="true" />-->
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_gravity="bottom|center"
+        android:layout_height="wrap_content">
+
+        <com.google.android.gms.ads.AdView
+            android:layout_gravity="bottom|center"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6352050986417104/5669290894">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            app:indicatorColor="#0cfab7"
+            app:indicatorName="BallGridPulseIndicator" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
